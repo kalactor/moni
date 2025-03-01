@@ -1,0 +1,80 @@
+# --------------------------------------------------- // System
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-jack
+pipewire-pulse
+gst-plugin-pipewire
+wireplumber
+pavucontrol
+pamixer
+networkmanager
+network-manager-applet
+bluez
+bluez-utils
+blueman
+brightnessctl
+udiskie
+nvidia
+os-prober
+
+# --------------------------------------------------- // Display Manager
+sddm
+qt5-quickcontrols
+qt5-quickcontrols2
+qt5-graphicaleffects
+
+# --------------------------------------------------- // Window Manager
+hyprland
+dunst
+rofi-wayland
+waybar
+swww
+#swaylock-effects-git
+#wlogout
+#grimblast-git
+hyprpicker
+slurp
+swappy
+cliphist
+
+# --------------------------------------------------- // Dependencies
+polkit-gnome
+xdg-desktop-portal-hyprland
+pacman-contrib
+parallel
+jq
+imagemagick
+qt5-imageformats
+ffmpegthumbs
+kde-cli-tools
+libnotify
+
+# --------------------------------------------------- // Theming
+nwg-look
+qt5ct
+qt6ct
+kvantum
+kvantum-qt5
+qt5-wayland
+qt6-wayland
+
+# --------------------------------------------------- // Applications
+firefox
+kitty
+dolphin
+ark
+vim
+code
+
+# --------------------------------------------------- // Shell
+#eza|zsh
+#oh-my-zsh-git|zsh
+#zsh-theme-powerlevel10k-git|zsh oh-my-zsh-git
+#eza|fish
+#starship|fish
+#fastfetch
+#pokemon-colorscripts-git|zsh
+
+# --------------------------------------------------- // HyDE
+#hyde-cli-git
