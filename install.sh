@@ -22,7 +22,7 @@ while IFS= read -r package; do
 		echo -e "\033[0;33m[skipping]\033[0m $package is already installed."
 	else
 		echo "Installing $package..."
-		if sudo yay -S --noconfirm --needed "$package" >> "$LOG_FILE" 2>&1; then
+		if sudo yay -S --noconfirm --needed "$package"; then
 			echo "Successfully installed $package"
 		else
 			echo "Failed to install $package. Check $LOG_FILE for details."
