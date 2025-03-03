@@ -4,25 +4,26 @@
 pacman -Sy --noconfirm
 pacman -S --noconfirm archlinux-keyring
 
-lsblk
+# lsblk
 
-echo "/dev/sdb is the currently selected disk"
-echo "Press Ctrl + C to exit the script, if wrong disk is selected :)"
-sleep 10
+# echo "/dev/sdb is the currently selected disk"
+# echo "Press Ctrl + C to exit the script, if wrong disk is selected :)"
+# sleep 10
 
-# Format partitions
-mkfs.fat -F32 /dev/sdb1
-mkfs.ext4 /dev/sdb2
-mkswap /dev/sdb3
+# # Format partitions
+# mkfs.fat -F32 /dev/sdb1
+# mkfs.ext4 /dev/sdb2
+# mkswap /dev/sdb3
 
-# Mount partitions
-mount /dev/sdb2 /mnt
-mkdir -p /mnt/boot
-mount /dev/sdb1 /mnt/boot
+# # Mount partitions
+# mount /dev/sdb2 /mnt
+# mkdir -p /mnt/boot
+# mount /dev/sdb1 /mnt/boot
 
-# Enable swap
-swapon /dev/sdb3
+# # Enable swap
+# swapon /dev/sdb3
 
+new.sh
 
 # Install base system and necessary packages
 pacstrap /mnt base base-devel linux linux-headers linux-firmware intel-ucode sudo git vim cmake make networkmanager cargo gcc
