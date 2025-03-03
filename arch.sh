@@ -15,15 +15,7 @@ pacman -S --noconfirm archlinux-keyring
 # mkfs.ext4 /dev/sdb2
 # mkswap /dev/sdb3
 
-# # Mount partitions
-# mount /dev/sdb2 /mnt
-# mkdir -p /mnt/boot
-# mount /dev/sdb1 /mnt/boot
-
-# # Enable swap
-# swapon /dev/sdb3
-
-new.sh
+./new.sh
 
 # Install base system and necessary packages
 pacstrap /mnt base base-devel linux linux-headers linux-firmware intel-ucode sudo git vim cmake make networkmanager cargo gcc

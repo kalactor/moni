@@ -86,7 +86,14 @@ sleep 2
 # Format the partitions
 mkfs.fat -F32 "$part1"      # Format EFI partition as FAT32
 mkswap "$part2"             # Prepare swap partition
-#swapon "$part2"             # Enable swap
 mkfs.ext4 "$part3"          # Format Linux filesystem partition as ext4
 
 echo "Partitioning and formatting complete on $selected_disk."
+
+# Mount partitions
+mount /dev/$part3 /mnt
+mkdir -p /mnt/boot
+mount /dev/$part1 /mnt/boot
+
+# Enable swap
+swapon /dev/$part2
