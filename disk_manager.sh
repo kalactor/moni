@@ -91,9 +91,9 @@ mkfs.ext4 "$part3"          # Format Linux filesystem partition as ext4
 echo "Partitioning and formatting complete on $selected_disk."
 
 # Mount partitions
-mount /dev/$part3 /mnt
+mount $part3 /mnt
 mkdir -p /mnt/boot
-mount /dev/$part1 /mnt/boot
+mount $part1 /mnt/boot
 
 # Enable swap
-swapon /dev/$part2
+swapon $part2
