@@ -4,17 +4,7 @@
 pacman -Sy --noconfirm
 pacman -S --noconfirm archlinux-keyring
 
-# lsblk
-
-# echo "/dev/sdb is the currently selected disk"
-# echo "Press Ctrl + C to exit the script, if wrong disk is selected :)"
-# sleep 10
-
-# # Format partitions
-# mkfs.fat -F32 /dev/sdb1
-# mkfs.ext4 /dev/sdb2
-# mkswap /dev/sdb3
-
+# Call to disk manager script
 ./disk_manager.sh
 
 # Install base system and necessary packages
